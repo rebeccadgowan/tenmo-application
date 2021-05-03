@@ -1,0 +1,21 @@
+Usage:
+
+1. Possible to enter invalid user id's when sending money:
+
+----------------------------------------------
+1001                 user      
+1002                 user2     
+1004                 user3     
+1005                 test-user 
+1008                 test-user1
+Enter ID of the user you are sending to (0 to cancel): 
+sdf
+Exception in thread "main" java.lang.NumberFormatException: For input string: "sdf"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+----------------------------------------------
+
+2. Same issue for viewing transfer details.
+
+Other than that, great job!
+
